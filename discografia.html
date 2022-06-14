@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="assets/images/logo2.jpg" type="image/jpg" sizes="16x16">
+
+    <title>JOÃO MORAIS</title>
+    
+    
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/stylejoao.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+    <link rel="stylesheet" href="assets/css/lightbox.css">
+        <style>
+          * {
+            box-sizing: border-box;
+          }
+
+          body {
+            margin: 0;
+            font-family: 'TimesNewRomant', sans-serif;
+          }
+          
+          .row {
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+            padding: 0 4px;
+            margin: 0px 50px 0px 50px;
+          }
+          
+          .column {
+            -ms-flex: 33%;
+            flex: 33%;
+            max-width: 33%;
+            padding: 0 4px;
+          }
+          
+          .column img {
+            vertical-align: middle;
+            width: 100%;
+          }
+
+          @media screen and (max-width: 800px) {
+            .column {
+              -ms-flex: 50%;
+              flex: 50%;
+              max-width: 50%;
+            }
+          }
+
+          @media screen and (max-width: 600px) {
+            .column {
+              -ms-flex: 100%;
+              flex: 100%;
+              max-width: 100%;
+            }
+          }
+
+        .card-container {
+          cursor: pointer;
+          height: 375px;
+          perspective: 600;
+          position: relative;
+          width: 400px;
+        }
+        .card {
+          height: 100%;
+          position: absolute;
+          transform-style: preserve-3d;
+          transition: all 1s ease-in-out;
+          width: 100%;
+        }
+        .card:hover {
+          transform: rotateY(180deg);
+        }
+        .card .side {
+          backface-visibility: hidden;
+          height: 100%;
+          position: absolute;
+          overflow: hidden;
+          width: 100%;
+        }
+        .card .back {
+          background: #7a7a7a;
+          color: #000000;
+          text-align: center;
+          transform: rotateY(180deg);
+          padding: 20px 0;
+        }
+
+        .loader {
+    position: fixed;
+    z-index: 99;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(141, 138, 138, 0.719);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader > img {
+    width: 100px;
+}
+
+.loader.hidden {
+    animation: fadeOut 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeOut {
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+          </style>
+<header class="main-header clearfix" role="header">
+  <div class="logo">
+    <a href="index.html"><em>JOÃO</em>  MORAIS</a>
+  </div>
+  <a href="#menu" class="menu-link"><i class="fa fa-bars"></i></a>
+  <nav id="menu" class="main-nav" role="navigation" >
+    <ul class="main-menu">
+
+        
+
+
+      <li><a href="index.html" class="external">Inicio</a></li>
+      <li ><a href="index.html" class="external" >Sobre o João</a>
+       
+      </li>
+      
+      <li><a href="galeria.html" class="external" >Galeria</a></li>
+      <li><a href="discografia.html" class="external" >Discografia</a></li>
+
+      
+      <li><a href="index.html">Contacto</a></li>
+     
+      
+    </ul>
+  </nav>
+</header>
+
+  <body style="background-color:rgb(141, 138, 138, 0.719);">
+    <div class="loader">
+      <img src="assets/images/loader.gif" alt="Loading..." />
+  </div>
+  <div style="margin-top: 50px;margin-bottom: 100px;" align="center">
+    <h1 align="center" style="color:rgb(238, 234, 234);font-family: 'Raleway',sans-serif; font-size: 62px; font-weight: 700; line-height: 200px; margin: 0 0 24px; text-align: center; text-transform: uppercase;">Discografia</h1>
+</div>
+
+  <div class="row" align="center"> 
+    <div class="column">
+      
+      <div class="card-container">
+       
+      </div>
+      </div>
+      <div class="column">
+        <div class="card-container">
+          <div class="card">
+            <div class="side"><img src="assets/images/joao3.jpg" alt="Álbum"></div>
+            <div class="side back">Álbum #1 - Volume 1 (2015)
+              <ul style=" font-family: 'Times New Roman', Times, serif; margin-top: 10px;margin-left: 50px;" align="left">
+                <li>◾Amigo Do Conto</li>
+                <li>◾Lua Desvairada</li>
+                <li>◾Deste Dia Vem Um</li>
+                <li>◾Dário</li>
+                <li>◾Sina Que Rima</li>
+                <li>◾Uma Leonor</li>
+                <li>◾Bela Lara</li>
+                <li>◾Duelo</li>
+                <li>◾Intuição</li>
+                <li>◾Num Limbo</li>
+                <li>◾Fruto</li>
+                <li>◾Embalado Por Ti</li>
+                <li>◾Fantasiando</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="card-container">
+          
+        </div>
+        </div>
+    </div>
+  </div>
+  <footer style="margin-top: 20px;">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <p><i class="fa fa-copyright"></i> Copyright 2022 by João Morais  
+          
+           | Design: <a rel="sponsored" target="_parent">JOAO MORAIS</a>&nbsp;&nbsp;&nbsp;<a href="https://www.instagram.com/ojoaomorais/"><i class="fa fa-instagram" style="color: white;"></i></a>&nbsp;&nbsp;&nbsp;<a href="https://www.facebook.com/moraisjoao22"><i class="fa fa-facebook-f" style="color: white;"></i></a>&nbsp;&nbsp;&nbsp;
+           <a href="https://open.spotify.com/artist/0VFEs8nTs1UB9lb114tOvf"><i class="fa fa-spotify" style="color: white;"></i></a>&nbsp;&nbsp;&nbsp;
+           <a href="https://twitter.com/ojoaomorais"><i class="fa fa-twitter" style="color: white;"></i></a></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+<script>
+  window.addEventListener("load", function () {
+const loader = document.querySelector(".loader");
+loader.className += " hidden";
+});
+</script>
+</html>
